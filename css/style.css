@@ -1,0 +1,85 @@
+/* ===== Base styles ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+/* ===== Layout objects ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== Hero section ===== */
+.hero {
+  min-height: 100vh;
+  background-image: url("../resources/HeroSection.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ===== Header ===== */
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header__logo img {
+  width: 40px;
+  height: 40px;
+}
+
+/* ===== Navigation ===== */
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav__link {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.nav__link:hover {
+  opacity: 1;
+}
+
+/* ===== Header actions ===== */
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__login {
+  font-size: 16px;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.btn--primary {
+  background-color: #ff8a00;
+  color: #ffffff;
+}
