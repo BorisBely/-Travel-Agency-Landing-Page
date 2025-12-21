@@ -18,6 +18,13 @@ body {
   background-size: cover;
   background-position: center;
 }
+.hero__content {
+  margin-top: 150px;
+}
+
+.hero__text {
+  margin-top: 10px;
+}
 
 /* ===== Header ===== */
 .header {
