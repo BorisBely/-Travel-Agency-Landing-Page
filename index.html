@@ -4,24 +4,37 @@
     <meta charset="UTF-8" />
     <title>Travel Agency</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
+    <!-- HERO -->
     <section class="hero">
       <header class="header">
         <div class="container header__content">
+          <!-- Logo -->
           <div class="header__logo">
             <img src="resources/LogoTravellian.svg" alt="Travellian logo" />
           </div>
+
           <!-- Navigation -->
-          <nav class="nav">
+          <nav class="nav" id="nav">
             <a href="#" class="nav__link">Home</a>
             <a href="#" class="nav__link">Explore</a>
             <a href="#" class="nav__link">Travel</a>
             <a href="#" class="nav__link">Blog</a>
             <a href="#" class="nav__link">Pricing</a>
           </nav>
+
+          <!-- Burger -->
+          <button class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
           <!-- Actions -->
           <div class="header__actions">
             <a href="#" class="header__login">Login</a>
@@ -29,11 +42,48 @@
           </div>
         </div>
       </header>
-      <!-- HERO CONTENT -->
+
+      <!-- Hero content -->
       <div class="container hero__content">
         <h1 class="hero__title">Start your unforgettable journey with us.</h1>
-        <p class="hero__text">The best travel for your jouney begins now</p>
+        <p class="hero__text">The best travel for your journey begins now</p>
       </div>
     </section>
+
+    <!-- POPULAR DESTINATIONS -->
+    <section class="destinations">
+      <div class="container">
+        <h2 class="destinations__title">Popular Destinations</h2>
+        <div class="destinations__divider"></div>
+        <p class="destinations__subtitle">
+          Most popular destinations around the world, from historical places to
+          natural wonders.
+        </p>
+
+        <div class="destinations__cards">
+          <div class="destination-card">
+            <img src="resources/Berlin.webp" alt="Berlin" />
+            <h3 class="destination-card__title">Berlin</h3>
+          </div>
+
+          <div class="destination-card">
+            <img src="resources/London.webp" alt="London" />
+            <h3 class="destination-card__title">London</h3>
+          </div>
+
+          <div class="destination-card">
+            <img src="resources/Lisbon.webp" alt="Lisbon" />
+            <h3 class="destination-card__title">Lisbon</h3>
+          </div>
+
+          <div class="destination-card">
+            <img src="resources/Venice.webp" alt="Venice" />
+            <h3 class="destination-card__title">Venice</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>
