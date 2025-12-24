@@ -95,31 +95,31 @@
           Most popular destinations around the world, from historical places to
           natural wonders.
         </p>
-
-        <div class="destinations__cards">
-          <div class="destination-card">
-            <img src="resources/Berlin.webp" alt="Berlin" />
-            <h3 class="destination-card__title">Berlin</h3>
+        <div class="destinations__slider">
+          <button class="slider__btn slider__btn--left" id="slideLeft">&#10094;</button>
+          <div class="destinations__viewport">
+             <div class="destinations__cards">
+              <div class="destination-card">
+                 <img src="resources/Berlin.webp" alt="Berlin" />
+              </div>
+              <div class="destination-card">
+                 <img src="resources/London.webp" alt="London" />
+              </div>
+              <div class="destination-card">
+                 <img src="resources/Lisbon.webp" alt="Lisbon" />
+              </div>
+              <div class="destination-card">
+                 <img src="resources/Venice.webp" alt="Venice" />
+              </div>
+             </div>
           </div>
-
-          <div class="destination-card">
-            <img src="resources/London.webp" alt="London" />
-            <h3 class="destination-card__title">London</h3>
-          </div>
-
-          <div class="destination-card">
-            <img src="resources/Lisbon.webp" alt="Lisbon" />
-            <h3 class="destination-card__title">Lisbon</h3>
-          </div>
-
-          <div class="destination-card">
-            <img src="resources/Venice.webp" alt="Venice" />
-            <h3 class="destination-card__title">Venice</h3>
-          </div>
+          <button class="slider__btn slider__btn--right" id="slideRight">&#10095;</button>
         </div>
       </div>
     </section>
 
     <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
+
   </body>
 </html>

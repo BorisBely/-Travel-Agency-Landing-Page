@@ -4,7 +4,7 @@ body {
   color: #ffffff;
 }
 
-/* ===== Layout objects ===== */
+/* ===== Layout ===== */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -97,9 +97,10 @@ body {
   height: 3px;
   background-color: #ffffff;
 }
+
 /* ===== Booking panel ===== */
 .booking {
-  margin-top: 40px;
+  margin-top: 300px;
   display: flex;
   align-items: flex-end;
   gap: 20px;
@@ -156,11 +157,6 @@ body {
   color: #222222;
 }
 
-.destinations__title {
-  font-size: 36px;
-  text-align: center;
-}
-
 .destinations__divider {
   width: 60px;
   height: 4px;
@@ -175,28 +171,66 @@ body {
   color: #555555;
 }
 
-/* Cards */
-.destinations__cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
+/* ===== Slider layout ===== */
+.destinations__slider {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
+.destinations__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* ===== Slider track ===== */
+.destinations__cards {
+  display: flex;
+  gap: 32px;
+  transition: transform 0.4s ease;
+  will-change: transform;
+}
+
+/* ===== Card ===== */
 .destination-card {
+  min-width: 300px;
+  height: 600px;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .destination-card img {
-  height: 260px;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.destination-card__title {
-  padding: 16px;
+/* ===== Slider buttons ===== */
+.slider__btn {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  background-color: #ff8a00;
+  color: #ffffff;
   font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.slider__btn:hover {
+  background-color: #e57900;
+}
+
+.slider__btn--left {
+  margin-right: 16px;
+}
+
+.slider__btn--right {
+  margin-left: 16px;
 }
 
 /* ===== Mobile ===== */
@@ -229,6 +263,7 @@ body {
   .hero__content {
     margin-top: 100px;
   }
+
   .booking {
     flex-direction: column;
     align-items: stretch;
@@ -237,7 +272,14 @@ body {
   .booking__button {
     width: 100%;
   }
-  .destinations__cards {
-    grid-template-columns: 1fr;
+
+  .destination-card {
+    min-width: 280px;
+    height: 220px;
+  }
+
+  .slider__btn {
+    width: 40px;
+    height: 40px;
   }
 }
