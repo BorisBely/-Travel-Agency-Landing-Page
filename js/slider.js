@@ -5,7 +5,6 @@ const btnRight = document.getElementById("slideRight");
 const cardWidth = 300 + 32;
 let offset = 0;
 
-// ДУБЛИРУЕМ КАРТОЧКИ
 cards.innerHTML += cards.innerHTML;
 
 btnRight.addEventListener("click", () => {
@@ -13,7 +12,6 @@ btnRight.addEventListener("click", () => {
   cards.style.transition = "transform 0.4s ease";
   cards.style.transform = `translateX(${offset}px)`;
 
-  // если дошли до середины дубликата — сброс без анимации
   if (Math.abs(offset) >= cards.scrollWidth / 2) {
     setTimeout(() => {
       cards.style.transition = "none";
