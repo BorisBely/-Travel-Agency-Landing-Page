@@ -1,36 +1,63 @@
-const cards = document.querySelector(".destinations__cards");
-const btnLeft = document.getElementById("slideLeft");
-const btnRight = document.getElementById("slideRight");
+function initSlider({
+  trackSelector,
+  leftBtnSelector,
+  rightBtnSelector,
+  cardWidth,
+  gap = 32,
+}) {
+  const track = document.querySelector(trackSelector);
+  const btnLeft = document.querySelector(leftBtnSelector);
+  const btnRight = document.querySelector(rightBtnSelector);
 
-const cardWidth = 300 + 32;
-let offset = 0;
+  if (!track || !btnLeft || !btnRight) return;
 
-cards.innerHTML += cards.innerHTML;
+  let offset = 0;
+  const step = cardWidth + gap;
 
-btnRight.addEventListener("click", () => {
-  offset -= cardWidth;
-  cards.style.transition = "transform 0.4s ease";
-  cards.style.transform = `translateX(${offset}px)`;
+  // зацикливание
+  track.innerHTML += track.innerHTML;
 
-  if (Math.abs(offset) >= cards.scrollWidth / 2) {
-    setTimeout(() => {
-      cards.style.transition = "none";
-      offset = 0;
-      cards.style.transform = `translateX(${offset}px)`;
-    }, 400);
-  }
+  btnRight.addEventListener("click", () => {
+    offset -= step;
+    track.style.transition = "transform 0.4s ease";
+    track.style.transform = `translateX(${offset}px)`;
+
+    if (Math.abs(offset) >= track.scrollWidth / 2) {
+      setTimeout(() => {
+        track.style.transition = "none";
+        offset = 0;
+        track.style.transform = `translateX(${offset}px)`;
+      }, 400);
+    }
+  });
+
+  btnLeft.addEventListener("click", () => {
+    offset += step;
+    track.style.transition = "transform 0.4s ease";
+    track.style.transform = `translateX(${offset}px)`;
+
+    if (offset > 0) {
+      setTimeout(() => {
+        track.style.transition = "none";
+        offset = -track.scrollWidth / 2;
+        track.style.transform = `translateX(${offset}px)`;
+      }, 400);
+    }
+  });
+}
+
+/* === Destinations === */
+initSlider({
+  trackSelector: ".destinations__cards",
+  leftBtnSelector: "#slideLeft",
+  rightBtnSelector: "#slideRight",
+  cardWidth: 400,
 });
 
-btnLeft.addEventListener("click", () => {
-  offset += cardWidth;
-  cards.style.transition = "transform 0.4s ease";
-  cards.style.transform = `translateX(${offset}px)`;
-
-  if (offset > 0) {
-    setTimeout(() => {
-      cards.style.transition = "none";
-      offset = -cards.scrollWidth / 2;
-      cards.style.transform = `translateX(${offset}px)`;
-    }, 400);
-  }
+/* === Special Offers === */
+initSlider({
+  trackSelector: ".offers__cards",
+  leftBtnSelector: ".offers__slider .slider__btn:first-child",
+  rightBtnSelector: ".offers__slider .slider__btn:last-child",
+  cardWidth: 480,
 });
