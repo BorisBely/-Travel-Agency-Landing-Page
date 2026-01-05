@@ -68,3 +68,9 @@ initSlider({
   rightBtnSelector: ".planners__btn--right",
   cardWidth: 300,
 });
+initSlider({
+  trackSelector: ".gallery__cards",
+  leftBtnSelector: ".galleryLeft",
+  rightBtnSelector: ".galleryRight",
+  cardWidth: 300,
+});
