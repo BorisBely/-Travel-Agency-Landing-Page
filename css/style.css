@@ -168,7 +168,6 @@ body {
   color: #555555;
 }
 
-/* Cards */
 .destinations__cards {
   display: grid;
   gap: 32px;
@@ -196,7 +195,6 @@ body {
   width: 100%;
 }
 
-/* Лента */
 .destinations__cards {
   display: flex;
   gap: 32px;
@@ -204,7 +202,6 @@ body {
   will-change: transform;
 }
 
-/* Карточка */
 .destination-card {
   height: 400px;
   flex-shrink: 0;
@@ -253,7 +250,6 @@ body {
   color: #555555;
 }
 
-/* Slider */
 .offers__slider {
   display: flex;
   align-items: center;
@@ -356,7 +352,6 @@ body {
   align-items: center;
 }
 
-/* Image */
 .blog__image {
   flex: 1;
 }
@@ -367,7 +362,6 @@ body {
   object-fit: cover;
 }
 
-/* Text */
 .blog__text {
   flex: 1;
 }
@@ -384,7 +378,6 @@ body {
   margin-bottom: 16px;
 }
 
-/* Read more */
 .blog__link {
   display: inline-block;
   margin-top: 12px;
