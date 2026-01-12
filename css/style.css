@@ -550,13 +550,12 @@ body {
   min-width: 160px;
 }
 
-/* Brand */
 .footer__brand {
   max-width: 260px;
 }
 
 .footer__logo {
-  width: 235px; /* тот же размер, что и в хедере */
+  width: 235px;
   height: 45px;
   margin-bottom: 16px;
 }
@@ -567,14 +566,12 @@ body {
   color: #bfc6cc;
 }
 
-/* Titles */
 .footer__title {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
-/* Lists */
 .footer__list {
   display: flex;
   flex-direction: column;
@@ -596,7 +593,6 @@ body {
   color: #bfc6cc;
 }
 
-/* Social */
 .footer__socials {
   display: flex;
   gap: 16px;
