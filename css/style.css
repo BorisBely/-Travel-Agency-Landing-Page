@@ -531,7 +531,6 @@ body {
   background-color: #ff8a00;
   margin: 16px 0;
 }
-/* ===== Footer ===== */
 .footer {
   background: linear-gradient(180deg, #14202d 0%, #0f1a24 100%);
   color: #ffffff;
@@ -544,8 +543,6 @@ body {
   gap: 48px;
   flex-wrap: wrap;
 }
-
-/* Column base */
 .footer__col {
   min-width: 160px;
 }
