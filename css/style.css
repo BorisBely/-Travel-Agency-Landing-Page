@@ -259,8 +259,6 @@ body {
   gap: 32px;
   transition: transform 0.4s ease;
 }
-
-/* Offer card */
 .offer-card {
   width: 480px;
   flex-shrink: 0;
@@ -328,7 +326,6 @@ body {
 .offers__slider > .slider__btn:last-of-type {
   margin-left: 16px;
 }
-/* ===== Blog ===== */
 .blog {
   padding: 100px 0;
   background-color: #ffffff;
@@ -382,7 +379,6 @@ body {
 .blog__link:hover {
   text-decoration: underline;
 }
-/* ===== Trip Planners ===== */
 .planners {
   padding: 100px 0;
   background-color: #ffffff;
