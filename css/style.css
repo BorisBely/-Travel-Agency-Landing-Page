@@ -177,7 +177,7 @@ body {
 .destination-card img {
   width: 100%;
   object-fit: cover;
-} /* ===== Slider layout ===== */
+}
 .destinations__slider {
   position: relative;
   display: flex;
