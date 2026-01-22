@@ -60,7 +60,6 @@ initSlider({
   rightBtnSelector: ".offers__slider .slider__btn:last-child",
   cardWidth: 480,
 });
-/* === Special Offers === */
 initSlider({
   trackSelector: ".planners__cards",
   leftBtnSelector: ".planners__btn--left",
