@@ -53,7 +53,6 @@ initSlider({
   cardWidth: 400,
 });
 
-/* === Special Offers === */
 initSlider({
   trackSelector: ".offers__cards",
   leftBtnSelector: ".offers__slider .slider__btn:first-child",
