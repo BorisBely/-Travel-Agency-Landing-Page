@@ -45,7 +45,6 @@ function initSlider({
   });
 }
 
-/* === Destin === */
 initSlider({
   trackSelector: ".destinations__cards",
   leftBtnSelector: "#slideLeft",
