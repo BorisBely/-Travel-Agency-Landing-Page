@@ -92,6 +92,8 @@ body {
   height: 3px;
   background-color: #ffffff;
 }
+
+/* ===== booking ===== */
 .booking {
   margin-top: 300px;
   display: flex;
@@ -378,6 +380,8 @@ body {
 .blog__link:hover {
   text-decoration: underline;
 }
+
+/* ===== planners ===== */
 .planners {
   padding: 100px 0;
   background-color: #ffffff;
