@@ -70,3 +70,9 @@ initSlider({
   rightBtnSelector: ".galleryRight",
   cardWidth: 300,
 });
+initSlider2({
+  trackSelector: ".gallery__cards",
+  leftBtnSelector: ".galleryLeft",
+  rightBtnSelector: ".galleryRight",
+  cardWidth: 300,
+});
