@@ -353,6 +353,7 @@ body {
   object-fit: cover;
 }
 
+/* ===== planners ===== */
 .blog__text {
   flex: 1;
 }
@@ -369,6 +370,7 @@ body {
   margin-bottom: 16px;
 }
 
+/* ===== planners ===== */
 .blog__link {
   display: inline-block;
   margin-top: 12px;
